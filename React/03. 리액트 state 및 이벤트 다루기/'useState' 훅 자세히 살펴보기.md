@@ -1,6 +1,6 @@
 # 'useState' 훅 자세히 살펴보기
 
-- usestate 는 몇몇  state를 등록한다.
+- useState 는 몇몇 state를 등록한다.
 - state 값이고 호출된 컴포넌트를 위한 값이다.
 - 특정 컴포넌트의 인스턴스를 위해 state를 등록한다.
 
@@ -40,12 +40,12 @@ export default Expense;
 ```
 
 - Expenses.js 는 네 개의 ExpenseItem을 가지고 있다.
-- 모든 아이템들은 별도의 스테이트를 같는데 다른 상태와는 분리되어 있다.
+- 모든 아이템들은 별도의 스테이트를 갖는데 다른 상태와는 분리되어 있다.
 - ExpenseItem을 네 번 생성했기 때문에 네 번 함수를 호출한다.
-- 그리고 매번 호출할 때마다 동일한 방법으로 새로운 별도의 state가 생성되지만  리액트에 의해 독립적으로 관리된다
+- 그리고 매번 호출할 때마다 동일한 방법으로 새로운 별도의 state가 생성되지만 리액트에 의해 독립적으로 관리된다
 - 첫번째 ExpenseItem을 수정해도 다른 아이템들은 영향을 받지 않는다.
     - 자신들만의 state를 가지고 있기 때문
-    - 컴포넌트별 인스턴스를 기반으로 해서  한 개 이상의 컴포넌트를 생성해도 독립적인 state를 갖는다.
+    - 컴포넌트별 인스턴스를 기반으로 해서 한 개 이상의 컴포넌트를 생성해도 독립적인 state를 갖는다.
 
 ```jsx
 import React, { useState } from "react";
@@ -78,11 +78,11 @@ const ExpenseItem = (props) => {
 export default ExpenseItem;
 ```
 
-const [title, setTItle] = useState(props.title);
+> const [title, setTItle] = useState(props.title);
 
 - 새로운 값을 할당할 때 const 상수를 사용하는 이유?
     - 우선 등호를 이용해서 값을 할당하지 않는다.
-    - state를 업데이트하는 함수(**useState)**를 호출하고, 구체적인 값은 리액트에 의해 어딘가에서 관리된다.
+    - state를 업데이트하는 함수 **(useState)** 를 호출하고, 구체적인 값은 리액트에 의해 어딘가에서 관리된다.
     - useState를 호출해서 리액트에게 어떤 값을 관리해야 한다고 선언한다.
     - 변수 자체를 볼 수는 없고 함수만 호출한다.
 
@@ -95,7 +95,7 @@ const [title, setTItle] = useState(props.title);
 
 - 특별히 리액트는 처음으로 주어진 컴포넌트 인스턴스에서 useState를 호출할 때 기록한다.
     - 그래서 우리가 처음 호출할 때 해당 인자를 초깃값으로 취한다.
-    - 위 코드에서는 props.title
+    - 위 코드에서는 **props.title**
 - 만약 컴포넌트가 그 때 재실행되면 상태가 변했기 때문에 리액트는 state를 다시 초기화하지는 않을 것이다.
     - 어떤 state가 업데이트 된 것에 기반해서 가장 최신 state를 우리에게 제공할 것이다.
 - 이 초깃값은 주어진 컴포넌트 인스턴스에 대해 처음으로 이 컴포넌트형 함수가 실행될 때만 고려되는 값이다.
