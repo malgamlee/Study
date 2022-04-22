@@ -94,3 +94,4 @@ HTTP는 대칭키 암호화 방식과 비대칭키 암호화 방식을 모두 �
 
 #### 참고
 - [[Web] HTTP와 HTTPS의 개념 및 차이점](https://mangkyu.tistory.com/98)
+- [[네트워크] HTTP와 HTTPS 동작 과정](https://velog.io/@averycode/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-HTTP%EC%99%80-HTTPS-%EB%8F%99%EC%9E%91-%EA%B3%BC%EC%A0%95)
