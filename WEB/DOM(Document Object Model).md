@@ -1,17 +1,19 @@
 # DOM (Document Object Model : 문서 객체 모델)
 
-<!-- <details>
+<details>
 <summary>요약</summary>
 <div markdown="1">
 
 ### DOM
   - HTML 문서에 대한 인터페이스
   
-#### DOMS이 사용되는 곳
-  - 뷰 포트에 무엇을 렌더링 할지 결정하기 위해 사용
-  - 페이지의 컨텐츠 및 구조, 스타일이 JavaScript 프로그램에 의해 수정되기 위해 사용
+## DOM과 HTML의 차이점
+### DOM은 HTML 문서로부터 생성되지만 항상 동일하지 않다.
+- HTML : 화면에 보이고자 하는 모양과 구조를 문서로 만든 것, 단순 텍스트로 구성되어 있음(최초에 화면을 그릴 때 사용하는 설계도)
+- DOM : HTML 문서의 내용과 구조가 객체 모델로 변화되어 다양한 프로그램에서 사용될 수 있음(설계도를 이용하여 실제로 화면에 나타나는 인터페이스)
+
 </div>
-</details> -->
+</details>
 
 ## DOM
 - XML이나 HTML 문서에 접근하기 위한 일종의 인터페이스
