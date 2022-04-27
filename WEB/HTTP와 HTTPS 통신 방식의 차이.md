@@ -1,7 +1,5 @@
 # HTTP와 HTTPS 통신 방식의 차이
 
-결정적 차이는 **보안** 이다.
-
 <details>
 <summary>요약</summary>
 <div markdown="1">
